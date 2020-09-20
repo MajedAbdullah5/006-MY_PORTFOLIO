@@ -1,0 +1,50 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.sidebar{
+    position: fixed;
+    min-width: 15%;
+    height: 100vh;
+    background: #1C1D21;
+    display: inline-block;
+}
+.list-ul li{
+    list-style: none;
+
+}
+.list-ul a{
+    display: block;
+    text-decoration: none;
+    line-height: 50px;
+    color: white;
+    padding-left: 15px;
+    border-top: 1px solid rgba(255,255,255,.1);
+    border-bottom: 1px solid black;
+}
+.list-ul a:hover{
+    padding-left: 20px;
+    transition:0.4s;
+}
+.list-ul i{
+    margin:0 10px 0 10px;
+}
+.sidebar header{
+    text-align: center;
+    color: white;
+    line-height: 50px;
+    background-color: #0e2231;
+    user-select: none;
+}
+    /*.main-div{*/
+    /*    margin-left: 16%;*/
+    /*}*/
+#myTable{
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+}
+#myTable tr{
+    height: 40px;
+}
