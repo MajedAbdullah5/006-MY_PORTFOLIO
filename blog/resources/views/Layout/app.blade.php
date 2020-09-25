@@ -14,15 +14,32 @@
 
 </head>
 <body>
-@include('Layout.menu')
+<div class="row">
+    <div class="col col-md-2">
+<div class="sidebar">
+    <header>DASHBOARD</header>
+    <ul class="list-ul">
+            <li><a href="{{url('/')}}"><i class="fas fa-home"></i>HOME</a></li>
+            <li><a href="{{url('/visitors')}}"><i class="fas fa-users"></i>VISITORS</a></li>
+            <li><a href="{{url('/services')}}"><i class="fas fa-globe"></i>SERVICES</a></li>
+            <li><a href=""><i class="fas fa-calendar-week"></i>DASHBOARD</a></li>
+            <li><a href=""><i class="far fa-question-circle"></i>DASHBOARD</a></li>
+            <li><a href=""><i class="far fa-envelope"></i>DASHBOARD</a></li>
+    </ul>
+</div>
+    </div>
+
+<div class="col col-md-10 mw-100">
 @yield('content')
 
-<script type="text/javascript" src="{{asset("js/bootstrap.min.js")}}"> </script>
-<script type="text/javascript" src="{{asset("js/custom.js")}}"> </script>
-<script type="text/javascript" src="{{asset("js/jquery-3.5.1.slim.min.js")}}"> </script>
-<script type="text/javascript" src="{{asset("js/popper.min.js")}}"> </script>
-<script type="text/javascript" src="{{asset("js/mdb.min.js")}}"> </script>
+<script type="text/javascript" src="{{asset('js/bootstrap.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('js/customJs.js')}}"> </script>
+<script type="text/javascript" src="{{asset('js/jquery-3.5.1.slim.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('js/popper.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('js/mdb.min.js')}}"></script>
 <script src="https://kit.fontawesome.com/9216278261.js" crossorigin="anonymous"></script>
-
+    @yield('script')
+</div>
+</div>
 </body>
 </html>
